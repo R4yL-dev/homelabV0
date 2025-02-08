@@ -1,7 +1,7 @@
 # Homelab
 
-**Version :**               0.1
-**Date de création :**      08/02/2025
+**Version :**               0.1 \
+**Date de création :**      08/02/2025 \
 **Dernière mise à jour :**  08/02/2025
 
 ## Introduction
