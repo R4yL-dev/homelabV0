@@ -13,8 +13,6 @@ The purpose of this repository is to document my homelab.
 For the moment, my homelab is very basic.
 It consists of two servers connected to my home network.
 
-### Servers
-
 ![Miniforum MS-01 illustration](assets/miniforum_ms_01.png)
 My 2 servers are identical.
 They are [Miniforum MS-01](https://store.minisforum.com/products/minisforum-ms-01)
@@ -34,7 +32,7 @@ and have the following specs :
 | Network 1  | 2x     | 2.5Gbps RJ45                                   |
 | Network 2  | 2x     | 10Gbps SFP+                                    |
 
-### Network
+## Network
 
 My network is currently very simple.
 The two servers are connected directly to my office switch.
@@ -45,4 +43,22 @@ without going through a switch.
 This allows me to pass through heavy data traffic such as distributed storage
 and hot migrations.
 
+### Network Diagram
+
 ![Network Diagram](assets/homelab0_network_diag.png)
+
+### IP Plan
+
+#### Home Net
+
+My home network, which also serves as the management network for my lab and
+the network for my VMs.
+
+| Device |  IP Address   | Subnet Mask   |
+| ------ | ------------- | ------------- |
+| Router | 192.168.1.1   | 255.255.255.0 |
+| esx01  | 192.168.1.10  | 255.255.255.0 |
+| esx02  | 192.168.1.11  | 255.255.255.0 |
+| vcs01  | 192.168.1.20  | 255.255.255.0 |
+
+DHCP Range : 192.168.1.200 - 192.168.1.250
