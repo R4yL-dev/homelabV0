@@ -4,6 +4,25 @@
 **Creation date**:  08/02/2025 \
 **Last update**:    09/02/2025
 
+## Table of contents
+
+<!-- toc -->
+
+- [Introduction](#introduction)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Virutal Machines](#virutal-machines)
+    * [vcs01](#vcs01)
+    * [nas01](#nas01)
+- [Network](#network)
+    * [Network Diagram](#network-diagram)
+    * [IP Plan](#ip-plan)
+        + [HomeNet](#homenet)
+        + [ClusterNet](#clusternet)
+        + [StorageNet](#storagenet)
+
+<!-- tocstop -->
+
 ## Introduction
 
 The purpose of this repository is to document my homelab.
@@ -31,6 +50,24 @@ and have the following specs:
 | SSD 2 / 3  | 2x     | Samsung 970 EVO Plus 500 Go                    |
 | Network 1  | 2x     | 2.5Gbps RJ45                                   |
 | Network 2  | 2x     | 10Gbps SFP+                                    |
+
+## Software
+
+Each servers run VMware ESXi 8 as hypervisor.
+I have a vCenter Server 8 to manage my 2 ESXi servers.
+
+## Virutal Machines
+
+### vcs01
+
+This is my vCenter Server.
+
+### nas01
+
+This a virtual NAS. It is a virtual machine who run TrueNAS.
+The purpose of this NAS is to provide distributed storage to my cluster.
+It is connected to the 2 servers via a dedicated SFP+ interface (StorageNet).
+With this NAS, I can do hot migrations of my VMs.
 
 ## Network
 
