@@ -33,4 +33,6 @@ and have the following specs :
 | Network 1  | 2x     | 2.5Gbps RJ45                                   |
 | Network 2  | 2x     | 10Gbps SFP+                                    |
 
+![Miniforum MS-01 illustration](assets/miniforum_ms_01.png)
+
 ### Network
