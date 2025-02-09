@@ -2,7 +2,7 @@
 
 **Version :**               0.1 \
 **Creation date :**         08/02/2025 \
-**Last update:**            08/02/2025
+**Last update:**            09/02/2025
 
 ## Introduction
 
@@ -15,6 +15,7 @@ It consists of two servers connected to my home network.
 
 ### Servers
 
+![Miniforum MS-01 illustration](assets/miniforum_ms_01.png)
 My 2 servers are identical.
 They are [Miniforum MS-01](https://store.minisforum.com/products/minisforum-ms-01)
 and have the following specs :
@@ -33,6 +34,13 @@ and have the following specs :
 | Network 1  | 2x     | 2.5Gbps RJ45                                   |
 | Network 2  | 2x     | 10Gbps SFP+                                    |
 
-![Miniforum MS-01 illustration](assets/miniforum_ms_01.png)
-
 ### Network
+
+My network is currently very simple.
+The two servers are connected directly to my office switch.
+They are therefore connected directly to my home network.
+
+I also use the 2 SFP+ ports on each server to link them directly together
+without going through a switch.
+This allows me to pass through heavy data traffic such as distributed storage
+and hot migrations.
