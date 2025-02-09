@@ -44,3 +44,5 @@ I also use the 2 SFP+ ports on each server to link them directly together
 without going through a switch.
 This allows me to pass through heavy data traffic such as distributed storage
 and hot migrations.
+
+![Network Diagram](assets/homelab0_network_diag.png)
